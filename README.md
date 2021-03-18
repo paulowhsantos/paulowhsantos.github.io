@@ -1,2 +1,2 @@
-# paulowhsantos.github.io
+# paulowh.github.io
 Meu Site Pessoal
