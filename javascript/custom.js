@@ -85,16 +85,31 @@
             if ($(all).hasClass('')) {
                 $(all).removeClass('tab-pane hide').addClass('x');
                 $(esconder).addClass('hide');
+                $(embreve).addClass('hide');
                 $('#port-add-icon').removeClass('fa-plus').addClass('fa-arrow-up');
             } else {
                 $(afterFirst).addClass('hide');
                 $(all).removeClass('x');
-                $(esconder).removeClass('hide')
+                $(esconder).removeClass('hide');
+                $(embreve).removeClass('hide');
                 $('#port-add-icon').addClass('fa-plus').removeClass('fa-arrow-up');
             }
 
         });
-
+        $('#website').on('click', function () {
+            if ($(esconder).hasClass('hide')){
+                $(esconder).removeClass('hide');
+                $(embreve).removeClass('hide');
+                $('#port-add-icon').addClass('fa-plus').removeClass('fa-arrow-up');
+            }
+        });
+        $('#all-sample').on('click', function () {
+            if ($(esconder).hasClass('hide')){
+                $(esconder).removeClass('hide');
+                $(embreve).removeClass('hide');
+                $('#port-add-icon').addClass('fa-plus').removeClass('fa-arrow-up');
+            }
+        });
 
         /***PORTFOLIO***/
         $('li.list-shuffle,#add-more').on('click', function () {
@@ -109,7 +124,6 @@
                 .addClass('InRight')
                 .show();
         });
-
 
         /***SKILLS***/
         $('div.skillbar').each(function () {
@@ -248,4 +262,12 @@
 
 })(jQuery);
 
-
+function galeria_oficina(){
+    $('#oficina').click();
+}
+function galeria_projeto(){
+    $('#projeto').click();
+}
+function galeria_website(){
+    $('#website').click();
+}
