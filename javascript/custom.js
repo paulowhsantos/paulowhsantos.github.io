@@ -64,8 +64,9 @@
 
 
         /***PORTFOLIO GALLERY***/
-        var all = '#a,#b,#c';
-        var afterFirst = '#b,#c';
+        var all = '#t,#a,#b,#c';
+        var afterFirst = '#a,#b,#c';
+        var esconder = '#t';
 
         $(afterFirst).addClass('hide');
 
@@ -83,10 +84,12 @@
         $('#add-more').on('click', function () {
             if ($(all).hasClass('')) {
                 $(all).removeClass('tab-pane hide').addClass('x');
+                $(esconder).addClass('hide');
                 $('#port-add-icon').removeClass('fa-plus').addClass('fa-arrow-up');
             } else {
                 $(afterFirst).addClass('hide');
                 $(all).removeClass('x');
+                $(esconder).removeClass('hide')
                 $('#port-add-icon').addClass('fa-plus').removeClass('fa-arrow-up');
             }
 
@@ -95,12 +98,12 @@
 
         /***PORTFOLIO***/
         $('li.list-shuffle,#add-more').on('click', function () {
-            $(".inLeft")
+            $(".inLeft")/*inRight*/
                 .removeClass('InLeft')
                 .hide()
                 .addClass('InLeft')
                 .show();
-            $(".inRight")
+            $(".inRight")/*inLeft*/
                 .removeClass('InRight')
                 .hide()
                 .addClass('InRight')
