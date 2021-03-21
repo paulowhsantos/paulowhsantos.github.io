@@ -1,7 +1,13 @@
-(function ($) {
+
+(function(){
+    $("#importar_menu").load("menu.html"); // incluir conteúdo do menu.html na div com id #includedContent
+  });
+  
+  (function ($) {
     "use strict";
 
     jQuery(document).ready(function () {
+
 
         /***MENU TOGGLE ANIMATION***/
         $('.toggle-normal').on('click', function() {
@@ -9,7 +15,6 @@
                 $('.middle-bar').toggleClass('middle-transform');
                 $('.bottom-bar').toggleClass('bottom-transform');
             });
-
 
         /***MENU CLOSE***/
         $('.section,div#menu-options a').on('click', function () {
