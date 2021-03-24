@@ -7073,6 +7073,7 @@ footer.page-footer .footer-copyright {
     text-decoration: none;
     color: #fff;
     background-color: #FF8038;
+    margin: 10px;
     letter-spacing: .5px;
     transition: .2s ease-out;
     cursor: pointer
@@ -7080,7 +7081,7 @@ footer.page-footer .footer-copyright {
 
 .btn-large:hover,
 .btn:hover {
-    background-color: #2bbbad
+    background-color: #fa6915
 }
 
 .btn-floating,
